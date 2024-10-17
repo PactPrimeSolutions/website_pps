@@ -1,0 +1,84 @@
+/* styles.css */
+.transparent-navbar {
+    background-color: white !important; /* Ensures the background is transparent */
+    border: none; /* Optional: Remove any border if visible */
+    box-shadow: none; /* Optional: Remove any default shadow */
+  }
+/* Styling for the navbar links */
+.nav-link {
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
+    font-size: 19px; /* Adjust font size */
+    margin: 0 15px; /* Add spacing between links */
+    color: rgba(33, 31, 31, 0.963);
+    font-family: 'Roboto', sans-serif; 
+  }
+  
+  /* Hover effect for navbar links */
+  .nav-link:hover {
+    color: #357ab8; /* Change color on hover */
+    transform: scale(1.1); 
+   font-size: 20px;
+   font-weight: bold;
+  } 
+ /* Active Link Styling */
+.nav-link.active {
+    color: #4a90e2;
+  }
+  
+  /* Underline effect on hover */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #4a90e2; /* Blue color for underline */
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+  }
+  .nav-link:hover::after {
+    width: 100%;
+    left: 50%;
+  }
+  
+  /* Optional: Color change on hover */
+  .nav-link:hover {
+    color: #4a90e2;
+  }
+  /* Styling for the search bar */
+  .form-control {
+    border: 1px solid #ccc; /* Light border for the input */
+    border-radius: 20px; /* Rounded corners */
+    padding: 5px 15px; /* Add padding for a nicer look */
+    transition: box-shadow 0.3s ease; /* Smooth transition on focus */
+  }
+  
+  /* Focus effect for the search bar */
+  .form-control:focus {
+    box-shadow: 0 0 5px #4a90e2; /* Sky blue glow on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Styling for the search button */
+  .btn-outline-primary {
+    border-color: #4a90e2; /* Border color */
+    color: #4a90e2; /* Text color */
+    margin-left: 5px; /* Space between input and button */
+    border-radius: 20px; /* Rounded button */
+    padding: 6px 12px; /* Adjust padding for better appearance */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect for the search button */
+  .btn-outline-primary:hover {
+    background-color: skyblue; /* Background color on hover */
+    color: white; /* Text color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Optional: Additional styling to adjust the overall navbar appearance */
+  .navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  }
+  

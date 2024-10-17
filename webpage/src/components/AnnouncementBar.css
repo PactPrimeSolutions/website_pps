@@ -1,0 +1,57 @@
+.announcement-bar {
+  background-color: #1565c0;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* Centers items (text) vertically */
+  justify-content: center; /* Centers the text horizontally */
+  overflow: hidden;
+  white-space: nowrap;
+  height: 40px; /* Set a specific height to control vertical centering */
+  padding: 0; /* Remove padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scrolling-text {
+  flex-grow: 1;
+  display: inline-block;
+  animation: scroll-left 40s linear infinite;
+  line-height: 40px; /* Matches the height of the bar to vertically align the text */
+  text-align: center;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.dismiss-button {
+  background: none;
+  border: none;
+  color: #f4f1f1;
+  font-size: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 10px; /* Add some space between dismiss and scrolling text */
+}
+
+.dismiss-button:hover {
+  color: #f0e3e3;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,112 @@
+.cards-section {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to bottom right, #eef2ff, #f8f9fd);
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #92c4f353;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    position: relative;
+}
+
+.card.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.card .more-text {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #444;
+    transition: max-height 0.6s ease;
+}
+
+.card .know-more {
+    font-size: 0.9rem;
+    color: #007bff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.card .icon-img {
+    width: 40px; /* Adjust this size to match the previous icon size */
+    height: 40px;
+    object-fit: contain; /* Ensures the image maintains aspect ratio */
+    margin-bottom: 15px;
+}
+
+/* Horizontal card spanning across all columns */
+.horizontal-card {
+    grid-column: span 3;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .horizontal-card {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .horizontal-card {
+        grid-column: span 1;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+}
