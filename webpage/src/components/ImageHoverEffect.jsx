@@ -32,7 +32,7 @@ const ImageHoverEffect = () => {
     {
       src: '/img5.jpg',
       title: 'Strong focus on data security and compliance',
-      description: 'Pactprime understands the importance of data security and ensures that the data for every process we take care of for your organization is safely managed as per relevant compliance procedures.',
+      description: 'At PactPrime, we understand the importance of data security and ensure that all data associated with the processes we manage for your organization is handled securely and in full compliance with relevant regulations.'
     },
     {
       src: '/img2.jpg',
@@ -46,8 +46,8 @@ const ImageHoverEffect = () => {
     },
     {
       src: '/img4.jpg',
-      title: 'We understand your business Requirement',
-      description: 'Pactprime strives to create a constant learning environment that ensures we are not just an outsourcing firm, but a partner in your organization’s growth story.',
+      title: 'We understand your business requirement',
+      description: 'Pactprime strives to create a constant learning environment that ensures we are not just an outsourcing firm, but a partner in your organization’s growth story and your long-term business objectives.',
     }
   ];
 

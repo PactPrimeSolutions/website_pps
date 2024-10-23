@@ -44,9 +44,9 @@ const About = () => {
           </p>
           <ul>
             <li>✔ We have Global Ambitions</li>
-            <li>✔ We adopt sustainable practices</li>
+            <li>✔ We adopt Sustainable Practices</li>
             <li>✔ We believe in Innovation</li>
-            <li>✔ We value our employees</li>
+            <li>✔ We value our Employees</li>
           </ul>
         </div>
       </div>

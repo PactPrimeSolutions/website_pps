@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import { FaFacebookF, FaTwitter, FaWhatsapp, FaInstagram, FaLinkedinIn, FaYoutube, FaTelegram } from 'react-icons/fa';
+import { FaFacebookF, FaWhatsapp, FaInstagram, FaLinkedinIn, FaYoutube, FaTelegram } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = ({ scrollToSection, refs }) => {
   // Function to handle link click and smooth scroll
@@ -36,12 +37,12 @@ const Footer = ({ scrollToSection, refs }) => {
           <h4>Follow Us</h4>
           <div className="social-icons">
             <a href=" https://www.facebook.com/pactprimesolutions?mibextid=2JQ9oc" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-            <a href="https://twitter.com/pactprimesolns?lang=en" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
             <a href="https://www.linkedin.com/company/pactprimesolns/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
             <a href="https://www.youtube.com/@pactprimesolutions" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
             <a href=" https://t.me/pactprime" target="_blank" rel="noopener noreferrer"><FaTelegram /></a>
             <a href="https://wa.link/qmeqg5" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
             <a href=" https://www.instagram.com/pactprimesolutions/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://twitter.com/pactprimesolns?lang=en" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
           </div>
         </div>
       </div>

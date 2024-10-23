@@ -8,8 +8,7 @@ const AnnouncementBar = () => {
     visible && (
       <div className="announcement-bar">
         <div className="scrolling-text">
-        🚨 IMPORTANT ALERT: PractPrime Solution is excited to announce the launch of our innovative technology services, designed to deliver cutting-edge solutions and drive success for our clients.📢
-        📢❗🚨
+         IMPORTANT ALERT: PactPrime Solutions is excited to announce the launch of our innovative technology services, designed to deliver cutting-edge solutions and drive success for our clients.
         </div>
       </div>
     )
